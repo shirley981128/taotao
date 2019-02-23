@@ -38,7 +38,7 @@
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
         	<param-name>contextConfigLocation</param-name>
-        	<param-value>classpath:usermanage-servlet.xml</param-value>
+        	<param-value>classpath:spring/usermanage-servlet.xml</param-value>
         </init-param>
         <!-- 0：off（false） 1：on（true） -->
         <load-on-startup>1</load-on-startup>
