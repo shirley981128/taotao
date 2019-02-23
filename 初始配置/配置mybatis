@@ -2,6 +2,7 @@
 Add mybatis-3-config.dtd
 URI:http://mybatis.org/dtd/mybatis-3-config.dtd
 二、设置别名
+	<!-- 也可以放在spring整合mybatis里配置 -->
 	<typeAliases>
 		<!-- 设置别名 -->
 		<package name="shirley.usermanage.pojo" />
