@@ -1,0 +1,12 @@
+一、配置applicationContext-mybatis.xml
+在mybatis-spring整合包中的SqlSessionFactoryBean类里找到工厂方法并在xml文件里做配置
+<bean class="org.mybatis.spring.SqlSessionFactoryBean">
+		<!-- 数据源 -->
+		<property name="dataSource" ref="dataSource"/>
+		<!-- 配置mybatis全局配置文件 -->
+		<property name="configLocation" value="classpath:mybatis/mybatis-config.xml"/>
+		<!-- 配置mapper.xml文件 -->
+		<property name="mapperLocations" value="classpath:mybatis/mappers/*.xml"/>
+		<!-- 别名包 -->
+		<property name="typeAliasesPackage" value="shirley.usermanage.pojo"/>
+	</bean>
