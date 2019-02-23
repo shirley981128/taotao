@@ -1,0 +1,9 @@
+一、在mysql里添加taotao数据库，新建tb_item,tb_oder,tb_orderdetails,tb_user四张表
+二、在shirley.usermanage.pojo包下新建User实体类，并添加注解@Table(name="tb_user")
+三、通过对id注解	@Id和@GeneratedValue(strategy = GenerationType.IDENTITY)对id设置主键和自增
+对普通字段注解@Column或对普通字段取名为“驼峰转下划线”模式
+使用@Transient注解可以在实体类中添加表中没有的字段
+四、在shirley.usermanage.mapper包里新建一个接口UserMapper，继承自mybatis全局配置文件里设定的Mapper，泛型类为实体类User，这样就可以通过实例访问到数据库里的表
+五、在shirley.usermanage.controller包里新建一个类UserController，注解@Controller和@RequestMapping("user")，定义控制方法，返回一个对象
+六、新建一个shirley.usermanage.bean包，新建EasyUIResult类，这个类就是返回的对象，为了使对象更抽象化，List rows的泛型类型设置为<?>
+七、在shirley.usermanage.service包下新建UserService类，将它标记为@Service，其属性userMapper实现类由mybatis的动态代理扫描器为其注入
