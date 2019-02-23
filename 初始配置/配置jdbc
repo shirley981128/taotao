@@ -1,0 +1,5 @@
+一、配置驱动名
+jdbc.driverClassName=com.mysql.jdbc.Driver
+二、配置连接
+jdbc.url=jdbc:mysql://127.0.0.1:3306/taotao?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
+本机查询，ip:127.0.0.1,mysql端口号3306，表名taotao
