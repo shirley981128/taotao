@@ -1,0 +1,9 @@
+一、配置XML.catalog
+Add mybatis-3-config.dtd
+URI:http://mybatis.org/dtd/mybatis-3-config.dtd
+二、设置别名
+	<typeAliases>
+		<!-- 设置别名 -->
+		<package name="shirley.usermanage.pojo" />
+	</typeAliases>
+  并新建shirley.usermanage.pojo包、shirley.usermanage.mapper包、shirley.usermanage.service包
