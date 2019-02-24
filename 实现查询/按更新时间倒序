@@ -1,0 +1,5 @@
+Example example = new Example(User.class);
+example.setOrderByClause("updated DESC");//设置排序条件
+List<User> users = this.userMapper.selectByExample(example);
+
+为了统一和mysql的时区，更改jdbc配置为serverTimezone=GMT%2b8
